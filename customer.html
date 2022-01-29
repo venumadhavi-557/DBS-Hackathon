@@ -1,0 +1,39 @@
+<html>
+  <head>
+   <style="color:red" <H1>Book order customer screen</H1> 
+  </head>
+  <script>
+document.getElementById("demo").innerHTML = "script.js";
+</script>
+  <link rel="stylesheet" href="styles.css">
+  <form action="reservation.php" method="post">
+    <div class="elem-group">
+    <label for="selection">Search Stock</label>
+    <select id="selection" name="preference" required>
+        <option value="">Choose a company from the List</option>
+        <option value="dbs">DBS</option>
+        <option value="tcs">TCS</option>
+        <option value="wipro">WIPRO</option>
+    </select>
+  </div>
+  <div class="elem-group">
+    <label for="selection">Order type</label>
+    <select id="selection" name="preference" required>
+        <option value="choose one">Choose one</option>
+        <option value="limit">limit</option>
+        <option value="market">market</option>
+       
+    </select>
+  </div>
+  <div class="elem-group">
+    <label for="name">Price</label>
+    <input type="text" id="name" name="visitor_name" placeholder="150.00" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Quantity</label>
+    <input type="email" id="email" name="visitor_email" placeholder="10" required>
+  </div>
+  
+  <button type="submit">Place order</button>
+</form>
+</html>
